@@ -1,6 +1,7 @@
 import React from "react";
-import { AboutBanner } from "../components/Banner.jsx";
-import { Collapse } from "../components/Collapse.jsx";
+import { AboutBanner } from "../../banner.jsx";
+import { Collapse } from "../../collapse.jsx";
+import "./A propos.scss";
 
 export default function About() {
   return (

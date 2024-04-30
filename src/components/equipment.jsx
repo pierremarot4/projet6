@@ -1,4 +1,4 @@
-import "./Equipment.scss";
+import "./equipment.scss";
 import PropTypes from "prop-types";
 
 export function Equipment(props) {

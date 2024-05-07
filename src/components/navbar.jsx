@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.scss";
+import "./navbar.scss";
 import logokasa from "../assets/logokasa.png";
 import { NavLink } from "react-router-dom";
 
@@ -14,7 +14,7 @@ function Navbar() {
       <NavLink to="/">
         <div>Accueil</div>
       </NavLink>
-      <NavLink to="/about">
+      <NavLink to="/apropos">
         <div>A propos</div>
       </NavLink>
     </nav>

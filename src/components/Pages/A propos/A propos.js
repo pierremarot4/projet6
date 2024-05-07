@@ -2,10 +2,13 @@ import React from "react";
 import { AboutBanner } from "../../banner.jsx";
 import { Collapse } from "../../collapse.jsx";
 import "./A propos.scss";
+import Navbar from "../../navbar.jsx";
+import Footer from "../../footer";
 
 export default function About() {
   return (
     <>
+      <Navbar />
       <AboutBanner />
       <div className="collapse-container">
         <Collapse title="Fiabilité">
@@ -40,6 +43,7 @@ export default function About() {
           </p>
         </Collapse>
       </div>
+      <Footer />
     </>
   );
 }

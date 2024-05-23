@@ -7,10 +7,12 @@ import { Tag } from "../../tag.jsx";
 import { Stars } from "../../stars.jsx";
 import { Collapse } from "../../collapse.jsx";
 import { Equipment } from "../../equipment.jsx";
+import Footer from "../../footer.jsx";
+import Navbar from "../../navbar.jsx";
 
 export default function Logement() {
-  let { logementId } = useParams();
-  const { data, loading, error } = useFetchLogement(logementId);
+  let { id } = useParams();
+  const { data, loading, error } = useFetchLogement(id);
 
   if (loading) return <div>Page is loading ...</div>;
   if (error || !data) return <ErrorPage />;
@@ -19,6 +21,7 @@ export default function Logement() {
 
   return (
     <>
+      <Navbar />
       <div className="logement">
         <Carousel images={data.pictures} />
         <div className="logement-details">
@@ -62,6 +65,7 @@ export default function Logement() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

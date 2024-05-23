@@ -1,10 +1,9 @@
 import PropTypes from "prop-types";
-import { NavLink } from "react-router-dom";
 import "./card.scss";
 
 function Card({ picture, title, href }) {
   return (
-    <NavLink to={href} className="card">
+    <a href={href} className="card">
       <div className="card__container">
         <img
           src={picture}
@@ -15,7 +14,7 @@ function Card({ picture, title, href }) {
           <span className="card__container__title__span">{title}</span>
         </div>
       </div>
-    </NavLink>
+    </a>
   );
 }
 

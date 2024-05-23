@@ -1,11 +1,11 @@
 import React from "react"
-import MainBanner from "../../banner"
-import Footer from "../../footer"
-import Card from "../../card";
+import MainBanner from "../../banner.jsx"
+import Footer from "../../footer.jsx"
+import Card from "../../card.jsx";
 import "./Accueil.scss";
 import { useFetchLogements } from "../../../hooks/useApi.js";
 import Erreur from "../Erreur/Erreur.js";
-import Navbar from "../../navbar.jsx"
+import Navbar from "../../navbar.jsx";
 
 export default function Accueil() {
   const { data, loading, error } = useFetchLogements();
